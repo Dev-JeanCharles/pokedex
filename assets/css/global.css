@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+:root {
+    --cor-fonte-principal: #000000;
+    --cor-nomes-pokemons: #FFFFFF;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+* {
+    color: var(--cor-fonte-principal);
+    font-family: var(--fonte-principal);
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.conteudo__principal {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo__principal__lista {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem; 
+    color: var(--cor-nomes-pokemons);
+    background-color: #14A06F;
+}
+
+.conteudo__principal__imagem {
+    display: flex;
+    align-self: flex-end;
+    max-width: 100%;
+    height: 120px;
+}
